@@ -1,0 +1,55 @@
+.bg {
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-color: rgba(112, 52, 219, 1);
+}
+
+#cabecalho {
+    margin-top: 50px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    @media (max-width: 917px) {
+        margin-top:0px;
+    }
+    
+    @media (max-width: 450px) {
+        justify-content: center;
+    }
+
+    h1  a{
+        color: #fff;
+        margin: 0 20px;
+        text-decoration: none;
+    }
+
+    nav {
+        margin-top: 9px;
+
+        &  ul{
+            display: flex;
+
+            li {
+                margin-right: 15px;
+                a {
+                    text-decoration: none;
+                    font-size: 1.0625em;
+                    color:rgba(255, 255, 255, 0.7);
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            @media (max-width: 450px) {
+                margin-left: 30px;
+            }
+        }
+    }
+}

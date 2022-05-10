@@ -1,0 +1,36 @@
+$p: 0.75rem;
+
+$white: #fff;
+$black: #000;
+$gray: #777777;
+
+@mixin grid ($grid,$grid-column, $grid-gap: default) {
+    display: $grid;
+    grid-template-columns: $grid-column;
+    column-gap: $grid-gap;
+}
+
+@import 'header';
+@import 'home';
+@import 'box';
+@import 'about';
+@import 'others';
+@import 'crafiting';
+@import 'footer';
+@import 'subscribe';
+@import 'scroll-suave';
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style-type: none ;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #222222;
+    background: linear-gradient(0deg, #8546f6 0%, #955bf9 100%);
+}
