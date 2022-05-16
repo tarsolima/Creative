@@ -26,7 +26,6 @@
         justify-items: center;
     }
     
-
         [type=email] {
             height: 40px;
             width: 400px;
@@ -65,7 +64,6 @@
                             
             }
 
-            
             &:hover > span {
                 color:$black;
                 transform: translateX(5px);

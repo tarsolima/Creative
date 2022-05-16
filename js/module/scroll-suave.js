@@ -1,4 +1,4 @@
-function initScroll() {
+export default function initScroll() {
     const scrollSuave = document.querySelectorAll('[data-scroll]');
     const windowHalf = window.innerHeight * .9;
 
@@ -19,5 +19,3 @@ function initScroll() {
         window.addEventListener('scroll', startScroll);
     }
 }
-
-initScroll();
