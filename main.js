@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){var t=document.querySelectorAll("[data-scroll]"),n=.8*window.innerHeight;function e(){t.forEach((function(t){t.getBoundingClientRect().top-n<0&&t.classList.add("active")}))}t.length&&(e(),window.addEventListener("scroll",e))}()})();
