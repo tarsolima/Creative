@@ -1,3 +1,4 @@
-import scrollSuave from './module/scroll-suave.js';
+import Scroll from './module/scroll-suave.js';
 
-scrollSuave();
+const scroll = new Scroll('[data-scroll]');
+scroll.init();

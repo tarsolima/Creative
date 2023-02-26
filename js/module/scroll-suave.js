@@ -1,20 +1,26 @@
-export default function initScroll() {
-    const scrollSuave = document.querySelectorAll('[data-scroll]');
-    const windowHalf = window.innerHeight * .8;
+export default class Scroll {
+  constructor() {
+    this.scrollSuave = document.querySelectorAll('[data-scroll]');
+    this.windowHalf = window.innerHeight * .8;
+    this.startScroll = this.startScroll.bind(this);
+    this.startScroll();
+  }
 
-    function startScroll() {
-        scrollSuave.forEach((itens) => {
-            const sectionTop = itens.getBoundingClientRect().top;
-            const conta = (sectionTop - windowHalf) < 0;
+  startScroll() {
+      this.scrollSuave.forEach((itens) => {
+        const sectionTop = itens.getBoundingClientRect().top;
+        const conta = (sectionTop - this.windowHalf) < 0;
+        if (conta) itens.classList.add('active');
+      });
+  }
 
-            if(conta) { 
-                itens.classList.add('active');
-            }
-        });
+  addEvent() {
+    window.addEventListener('scroll', this.startScroll);
+  }
+
+  init() {
+    if(this.scrollSuave.length) {
+        this.addEvent();
     }
-
-    if (scrollSuave.length) {
-    startScroll()
-    window.addEventListener('scroll', startScroll);
-    }
+  }
 }
