@@ -1,4 +1,8 @@
-import Scroll from './module/scroll-suave.js';
+import AnimaScroll from './module/anima-scroll.js';
+import ScrollSuave from './module/scroll-suave.js';
 
-const scroll = new Scroll('[data-scroll]');
-scroll.init();
+const animaScroll = new AnimaScroll('[data-scroll]');
+animaScroll.init();
+
+const scrollSuave = new ScrollSuave('[data-list] a[href^="#"]');
+scrollSuave.init();

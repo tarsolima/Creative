@@ -10,9 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">  
   </head>
   <body>
-    <div class="bg">
-        <header id="cabecalho" data-scroll>
-          <h1><a href="#">Creative </a></h1>
+      <div class="bg">
+          <header data-list id="cabecalho" data-scroll>
+            <h1><a href="#creative">Creative </a></h1>
           <nav>
             <ul>
               <li><a href="#creative">Home</a></li>
@@ -21,7 +21,7 @@
             </ul>
           </nav>
         </header>
-      <div class="container1" data-scroll>
+      <div id="creative" class="container1" data-scroll>
         <h1>
           WE'RE <br/>
           CREATIVE
@@ -63,14 +63,14 @@
         <section id="company" data-scroll>
             <div class="ourcompany">
                 <h2>About <br> Our Company</h2>
-                <p>LCD screens are uniquely modern in style, and the liquid crystals that make.</p>
+                <p>Creative are uniquely modern in style, and the liquid crystals that make.</p>
             </div>
                 <figure>
                     <img src="./img/about.jpg" alt="">
                 </figure>
                 <div class="history">
                     <h3>History</h3>
-                    <p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology.</p>
+                    <p>Creative are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more portable technology.</p>
                 </div>
         </section>
         <section id="others" data-scroll>
@@ -107,7 +107,7 @@
             <h2>Subscribe Newsletter</h2>
             <p>Can you imagine what we will be downloading in another</p>
             <form action="enviar.php" method="POST">
-                <input type="email" name="E-mail" autocomplete="off" placeholder="Email address">
+                <input type="email" name="E-mail" autocomplete="off" placeholder="Email address" required>
                 <button>Get Started
                     <span>&rarr;</span>
                 </button>
@@ -115,7 +115,7 @@
         </section>
     </main>
     <footer data-scroll>
-        <nav>
+        <nav data-list>
             <ul>
                 <li><a href="#creative">Home</a></li>
                 <li><a href="#company">Company</a></li>
