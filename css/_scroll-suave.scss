@@ -8,3 +8,22 @@
     opacity: 1;
     transform: translate3d(0, 0px, 0);
 }
+
+.scrolly.active {
+    transition-delay: .4s;
+}
+
+
+.scrollx.active {
+    animation: animation-scroll-box .3s ease-in-out;
+}
+
+@keyframes animation-scroll-box {
+    from {
+        transform: translate3d(-30px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0px, 0, 0);
+    }
+}
