@@ -1,7 +1,7 @@
 export default class AnimaScroll {
-  constructor() {
-    this.scrollSuave = document.querySelectorAll('[data-scroll]');
-    this.windowHalf = window.innerHeight * .8;
+  constructor(scroll) {
+    this.scrollSuave = document.querySelectorAll(scroll);
+    this.windowHalf = window.innerHeight * 8;
     this.startScroll = this.startScroll.bind(this);
     this.startScroll();
   }
