@@ -1,0 +1,22 @@
+$p: 0.875rem;
+
+$white: #fff;
+$black: #000;
+$black-p: #222;
+$white-p: #fff;
+
+$headings: 'Poppins', sans-serif;
+$paragraphs: 'Roboto', sans-serif;
+
+@mixin grid ($grid,$grid-column, $grid-gap: 0) {
+    display: $grid;
+    grid-template-columns: $grid-column;
+    column-gap: $grid-gap;
+}
+
+@mixin paragraph($color: $black-p, $font: .875rem , $family: $paragraphs, $textHeight: 21px) {
+    color: $color;
+    font-family: $family;
+    font-size: $font;
+    line-height: $textHeight;
+}

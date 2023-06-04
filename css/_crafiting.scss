@@ -20,7 +20,7 @@
             padding: 10px 15px;
         }
  
-        h1 {
+        h2 {
             font-size: 2rem;
             color: $white;
             line-height: 1.3;
@@ -28,8 +28,7 @@
         }
 
         p {
-            color: $white;
-            line-height: 1.5;
+            @include paragraph($white-p);
         }
     }
 }

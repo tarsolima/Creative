@@ -1,7 +1,9 @@
 footer {
-    padding: 40px 0 30px 0;
-    background: #333333;
+    padding: 40px 0 20px 0;
+    background: #333;
     margin-bottom: 70px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 
     @media (max-width:917px) {
         margin-bottom: 0px;
@@ -16,7 +18,7 @@ footer {
             margin-left: 15px;
 
             a {
-                color:rgba(255, 255, 255, 0.7);
+                color:#cccccc;
                 text-decoration: none;
                 transition: all 0.3s;
 
@@ -30,7 +32,7 @@ footer {
 
     p {
         text-align: center;
-        color: $white;
+        color: #ffffffb3;
         padding: 0 15px;
     }
 }

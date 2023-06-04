@@ -1,15 +1,4 @@
-$p: 0.75rem;
-
-$white: #fff;
-$black: #000;
-$gray: #777777;
-
-@mixin grid ($grid,$grid-column, $grid-gap: default) {
-    display: $grid;
-    grid-template-columns: $grid-column;
-    column-gap: $grid-gap;
-}
-
+@import 'geral';
 @import 'header';
 @import 'home';
 @import 'box';
@@ -31,6 +20,6 @@ $gray: #777777;
 body {
     max-width: 900px;
     margin: 0 auto;
-    color: #222222;
+    color: #222;
     background: linear-gradient(0deg, #8546f6 0%, #955bf9 100%);
 }

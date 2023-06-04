@@ -1,7 +1,6 @@
 #company {
-    @include grid (grid, 1fr 1fr 1fr);
-    column-gap: 20px;
-    padding: 60px 0;
+    @include grid (grid, 1fr 1fr 1fr, 20px);
+    padding: 40px 0;
     align-items: center;
     background-color: #f9f9ff;
 
@@ -26,9 +25,7 @@
         }
 
         p {
-            color: $gray;
-            font-family: 'Poppins', sans-serif;
-            font-size: $p;
+            @include paragraph;
             padding: 0 10px;
         }
 
@@ -65,9 +62,7 @@
         }
 
         p {
-            color: $gray;
-            font-family: 'Poppins', sans-serif;
-            font-size: $p;
+            @include paragraph;
 
             @media (max-width: 627px) {
                 text-align: center;
