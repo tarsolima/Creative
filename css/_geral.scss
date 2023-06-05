@@ -1,7 +1,11 @@
 $p: 0.875rem;
+$headings2: 1.125rem;
 
 $white: #fff;
 $black: #000;
+
+$black-h2: #222;
+$white-h2: #fff;
 $black-p: #222;
 $white-p: #fff;
 
@@ -14,7 +18,13 @@ $paragraphs: 'Roboto', sans-serif;
     column-gap: $grid-gap;
 }
 
-@mixin paragraph($color: $black-p, $font: .875rem , $family: $paragraphs, $textHeight: 21px) {
+@mixin headings2($color: $black-h2, $font: $headings2, $family: $headings) {
+    color: $color;
+    font-size: $font;
+    font-family: $family;
+}
+
+@mixin paragraph($color: $black-p, $font: $p , $family: $paragraphs, $textHeight: 21px) {
     color: $color;
     font-family: $family;
     font-size: $font;
